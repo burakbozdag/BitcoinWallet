@@ -378,7 +378,7 @@ void MainWindow::on_kayit_2_clicked()
         msgBox.exec();
         return;
     }
-    else if(ui->sendBitcoinAmount->text().toInt() == 0){
+    else if(ui->sendBitcoinAmount->text().toDouble() == 0){
         msgBox.setText("The amount cannot be zero");
         msgBox.exec();
         return;
